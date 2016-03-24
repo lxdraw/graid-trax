@@ -27,7 +27,7 @@ In the Directory field browse for your workspace
 
 Click next 
 
-Click next
+Click next again
 
 Click finish
 
@@ -55,7 +55,7 @@ Once more select the library from the list then click Add External Jars
 
 Navigate to where you downloaded Hibernate
 
-Go into lib jpa
+Go into lib >> jpa
 
 Select the jar by the name of hibernate-entitymanager-<versionnumber>.jar
 
