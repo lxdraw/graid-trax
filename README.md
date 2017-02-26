@@ -3,10 +3,6 @@ JPA demo for DMACC DIAD
 
 Instructions for local setup:
 
-Download latest version of Hibernate from http://hibernate.org/orm/downloads/
-
-Download JDBC driver for MySQL from: http://dev.mysql.com/downloads/connector/j/
-
 In Eclipse:
 
 File >> Import
@@ -31,63 +27,11 @@ Click next again
 
 Click finish
 
-Open Preferences
-  Windows: Windows >> Preferences 
-  Mac: Eclipse >> Preferences
-  
-Java >> Build Path >> User Libraries
+Install the Gradle Buildship Integration plugin in Eclipse from Help >> Eclipse Marketplace if you don't have it already
 
-Click New
+Right click on the project
 
-Enter a name for the library
-
-Click OK
-
-Select the library from the list then click Add External Jars
-
-Navigate to where you downloaded Hibernate
-
-Go into lib >> required
-
-Select ALL the jars
-
-Once more select the library from the list then click Add External Jars
-
-Navigate to where you downloaded Hibernate
-
-Go into lib >> jpa
-
-Select the jar by the name of hibernate-entitymanager-<versionnumber>.jar
-
-Click Ok
-
-Right click on the graid-trax project and click Build Path >> Configure Build Path
-
-Under the Libraries tab: 
-
-Click Add Library
-
-Select User Library and click next
-
-Click the checkbox next to the library you just created for Hibernate
-
-Click Finish
-
-Click Apply 
-
-Click Add External JARs
-
-Navigate to where you downloaded the MySQL JDBC driver
-
-Select the jar by the name of mysql-connector-java-<versionnumber>.jar
-
-Click Apply 
-
-Click OK
-
-Project >> Clean 
-
-Click the checkbox next to the graid-trax project and click OK
+Go down to Gradle and Refresh Gradle Project 
 
 Under the project go to:
 
@@ -101,9 +45,9 @@ Setup database:
 
 Start your database and enter the mysql client in the terminal/command prompt
 
-Enter the following: CREATE DATABASE graidtrax_db;
+Enter the following: CREATE DATABASE graidtrax;
 
-Enter the following: use graidtrax_db;
+Enter the following: use graidtrax;
 
 Enter the following: grant all privileges on graidtrax_db.* to shazam@localhost identified by 'SHAZAM2013';
 
