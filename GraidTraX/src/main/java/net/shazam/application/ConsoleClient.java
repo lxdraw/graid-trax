@@ -56,7 +56,7 @@ public class ConsoleClient {
 				OUT.println("Please select a CRUD operation:\n\t" 
 						+ "1) Enter a new test record\n\t"
 						+ "2) Query for a test record\n\t"
-						+ "3) Update the score ofa test record\n\t"
+						+ "3) Update the score of a test record\n\t"
 						+ "4) Delete all test records for a student\n\t"
 						+ "5) Exit");
 				String userOperation = br.readLine();
@@ -111,7 +111,7 @@ public class ConsoleClient {
 			boolean createSuccessful = gb.createTestRecord(firstName, lastName, score, testDate);
 			
 			if(createSuccessful)
-				OUT.println("Record successfully create for " + firstName + " " + lastName);
+				OUT.println("Record successfully created for " + firstName + " " + lastName);
 			else
 				OUT.println("Failed to create record");
 		} catch(IOException e) {
